@@ -191,6 +191,10 @@ img {
   }
 }
 
+.orange-top {
+  margin-top: 70px;
+}
+
 .orange-top img {
   margin-bottom: -2px;
   width: 100%;
@@ -203,6 +207,105 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.contact {
+  background: #fafafa;
+}
+
+.contact__content {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 150px 0 50px;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 30px;
+  color: #882029;
+  padding-bottom: 60px;
+  line-height: 40px;
+}
+
+.contact__subtitle {
+  text-align: center;
+  font-size: 48px;
+  color: #882029;
+  padding-bottom: 60px;
+  font-weight: 500;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.form__group {
+  position: relative;
+  width: 100%;
+  border-bottom: 3px solid #882029;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .form__group.-name, .form__group.-surname {
+    max-width: 350px;
+  }
+}
+
+.form__group-input {
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 30px;
+  color: #75848a;
+}
+
+.form__group-input:not(:placeholder-shown) ~ .form__group-label {
+  font-size: 0;
+}
+
+.form__group.-message textarea {
+  resize: none;
+  text-align: left;
+}
+
+.form__group-label {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-size: 30px;
+  color: #75848a;
+  text-align: center;
+}
+
+.form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto;
+  width: 200px;
+  height: 90px;
+  border-radius: 20px;
+  background: #882029;
+  color: #fff;
+  font-size: 40px;
 }
 
 .footer {
@@ -276,7 +379,7 @@ img {
 }
 
 .footer-bottom {
-  background: #758b98;
+  background: #fafafa;
 }
 
 .footer-bottom img {
